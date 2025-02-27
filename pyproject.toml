@@ -3,7 +3,7 @@
   requires = ["setuptools", "setuptools_scm[toml]", "wheel"]
 
 [project]
-  name = "gist"
+  name = "cli_gist"
   readme = "README.md"
   description = "Command line to upload and update your gist files."
   license = {file = "LICENSE"}
