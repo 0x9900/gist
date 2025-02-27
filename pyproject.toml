@@ -1,0 +1,57 @@
+[build-system]
+  build-backend = "setuptools.build_meta"
+  requires = ["setuptools", "setuptools_scm[toml]", "wheel"]
+
+[project]
+  name = "gist"
+  readme = "README.md"
+  description = "Command line to upload and update your gist files."
+  license = {file = "LICENSE"}
+  dynamic = ["version"]
+  requires-python = ">=3.10"
+  authors = [
+    { name = "Fred C. (W6BSD)" },
+  ]
+  classifiers = [
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    'Development Status :: 2 - Pre-Alpha',
+    'Environment :: Console',
+    'Operating System :: Unix',
+    'Operating System :: POSIX',
+    'Programming Language :: Python',
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+  ]
+  dependencies = [
+  ]
+
+[tool.setuptools]
+    include-package-data = true
+
+[tool.setuptools_scm]
+    write_to = "gist/_version.py"
+
+[project.optional-dependencies]
+dev = [
+    "flake8",
+    "isort",
+    "mypy",
+    "pre-commit",
+    "pylint",
+]
+
+[project.urls]
+  Documentation = "https://github.com/0x9900/gist/"
+  Source = "https://github.com/0x9900/gist"
+  Tracker = "https://github.com/0x9900/gist/issues"
+
+[project.scripts]
+  gist = "gist.gist:main"
+
+[tool.setuptools.packages.find]
+    include = ["gist*"]
+
+#

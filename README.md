@@ -24,6 +24,11 @@ Gist URL: https://gist.github.com/0x9900/c7dfade18834d095a2b2168d35234ae0
 
 **Help:**
 ```
+usage: gist.py [-h] {new,update,list} ...
+gist.py: error: the following arguments are required: {new,update,list}
+```
+
+```
 % gist new --help
 usage: gist new [-h] [-f FILE [FILE ...]] [-d DESCRIPTION] [-p]
 
