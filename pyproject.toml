@@ -43,7 +43,7 @@ dev = [
 ]
 
 [project.urls]
-  Documentation = "https://github.com/0x9900/gist/"
+  Documentation = "https://github.com/0x9900/gist/blob/main/README.md"
   Source = "https://github.com/0x9900/gist"
   Tracker = "https://github.com/0x9900/gist/issues"
 
